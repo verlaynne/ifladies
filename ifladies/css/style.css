@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* CONFIGURAÇÕES DO HEADER */
+/* CONFIGURAÇÕES DA class "header" */
 header {
     /*position: fixed;*/
     left: 0px;
@@ -15,70 +15,88 @@ header {
     text-align: center;
     background: #bea8a8;
 }
-/* CONFIGURAÇÕES DO HEADER NA LISTA NAS TAG "li"*/
+/* CONFIGURAÇÕES DA class "header" NA LISTA NAS TAG "li"*/
 header li{
     display: inline-block;
     margin: 0 10px;
 }
-/* CONFIGURAÇÕES DO HEADER NA LISTA EM CADA TAG "a" */
+/* CONFIGURAÇÕES DA class "header" NA LISTA EM CADA TAG "a" */
 header a {
     text-decoration: none;
-    color: white;
+    color: rgb(12, 11, 11);
 
 }
-/* CONFIGURAÇÕES DA LOGO */
+/* CONFIGURAÇÕES DA class "logo" */
  .logo {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2%;        
         
 }
-/* CONFIGURAÇÕES DA LOGO DA TAG "img"*/
+/* CONFIGURAÇÕES DA class "logo" NA TAG "img"*/
 .logo img {
-        border-radius: 0px 0px;
+      
         height: 60px ;
         width: 60px;
         float: left;        
         padding: 0px px;
 }
-/* CONFIGURAÇÕES DO MENU NA TAG "ul"*/
-.menu ul {
-    border-radius: 10px;
-    height: 50px;
-    width: 100%;
-    padding:5px;
-    margin:0px;
-    float: center;    
-    list-style:none;
-    font:100% normal;
+/* CONFIGURAÇÕES DA class "menu" NA TAG "ul"*/
+.menu ul{
+    position: relative;
+    background: #bea8a8;
+    margin: 0px;
+    padding: 0px;
+}
+/* CONFIGURAÇÕES DA class "menu" NA TAG "li" DA TAG "ul"*/
+.menu ul li{
+    display: inline-block;
+}
+/* CONFIGURAÇÕES DA class "menu" NA TAG "a" DA TAG "li" DA TAG "ul"*/
+.menu ul li a{
+    text-decoration: none;
+    color: #050505;
+    padding: 15px;
+    display: block;
+}
+/* CONFIGURAÇÕES DA class "menu" NA TAG "li" DA TAG "ul" COM "hover"*/
+.menu ul li :hover{
+    color: #bb6e6e;
+
+}
+/* CONFIGURAÇÕES DA class "menu" NA TAG "ul" DA TAG "ul"*/
+.menu ul ul{
+    position: absolute;
+    min-width: 200px;
+    display: none;
     
 }
-/* CONFIGURAÇÕES DO MENU NA LISTA NA TAG "li"*/
-.menu ul li {   
-    display: inline-flex; 
-    padding: 20px 0px;
+/* CONFIGURAÇÕES DA class "menu" NA TAG "li" DA TAG "ul" DA TAG "ul"*/
+.menu ul ul li{
+    display: block;
+    background: #bea8a8;
 }
-/* CONFIGURAÇÕES DO MENU NA LISTA DENTRO DE CADA TAG "li" CONFIGURANDO AS TAG "a"*/
-.menu ul li a { 
-    text-decoration: none;
-    background-color:#bea8a8;
-    color: #030303;
-    /*border-radius: 0px 0px;
-    border-bottom:0px  solid #bea8a8;*/
-    padding: 0px 0px;
-    /*float: ;*/
+/* CONFIGURAÇÕES DA class "menu" NA TAG "li" DA TAG "ul" COM "hover" EM "ul"*/
+.menu ul li:hover ul{
+    display: block;
 }
-/* CONFIGURAÇÕES DO MENU NA LISTA DENTRO DE CADA TAG "li" CONFIGURANDO AS TAG "a" COM "hover"*/
-.menu ul li a:hover {
-    /*background-color:#D6D6D6;*/
-    color: #6d6666;
-    /*border-bottom:3px solid #a33f3f;*/
-}
-
+/* CONFIGURAÇÕES DA class "responsive" */
 .responsive{
     width: 100%;
     max-width: 1920px;
     height: auto;
+}
+/* CONFIGURAÇÕES DA class "modalidades" */
+.modalidades {
+    display: inline-flex;
+    
+}
+/* CONFIGURAÇÕES DA class "modalidades" NA TAG "img" DA TAG "a" */
+.modalidades a img{
+    border-radius: 100px 150px;
+    height: 250px ;
+    width: 250px;        
+    padding: 1px 1px;
 }
 /*footer*/
 
