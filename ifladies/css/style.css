@@ -23,7 +23,7 @@ header li{
 /* CONFIGURAÇÕES DO HEADER NA LISTA EM CADA TAG "a" */
 header a {
     text-decoration: none;
-    color: white;
+    color: rgb(12, 11, 11);
 
 }
 /* CONFIGURAÇÕES DA LOGO */
@@ -35,50 +35,59 @@ header a {
 }
 /* CONFIGURAÇÕES DA LOGO DA TAG "img"*/
 .logo img {
-        border-radius: 0px 0px;
+      
         height: 60px ;
         width: 60px;
         float: left;        
         padding: 0px px;
 }
-/* CONFIGURAÇÕES DO MENU NA TAG "ul"*/
-.menu ul {
-    border-radius: 10px;
-    height: 50px;
-    width: 100%;
-    padding:5px;
-    margin:0px;
-    float: center;    
-    list-style:none;
-    font:100% normal;
+.menu ul{
+    position: relative;
+    background: #bea8a8;
+    margin: 0px;
+    padding: 0px;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #050505;
+    padding: 15px;
+    display: block;
+}
+.menu ul li :hover{
+    color: #bb6e6e;
+
+}
+.menu ul ul{
+    position: absolute;
+    min-width: 200px;
+    display: none;
     
 }
-/* CONFIGURAÇÕES DO MENU NA LISTA NA TAG "li"*/
-.menu ul li {   
-    display: inline-flex; 
-    padding: 20px 0px;
+.menu ul ul li{
+    display: block;
+    background: #bea8a8;
 }
-/* CONFIGURAÇÕES DO MENU NA LISTA DENTRO DE CADA TAG "li" CONFIGURANDO AS TAG "a"*/
-.menu ul li a { 
-    text-decoration: none;
-    background-color:#bea8a8;
-    color: #030303;
-    /*border-radius: 0px 0px;
-    border-bottom:0px  solid #bea8a8;*/
-    padding: 0px 0px;
-    /*float: ;*/
-}
-/* CONFIGURAÇÕES DO MENU NA LISTA DENTRO DE CADA TAG "li" CONFIGURANDO AS TAG "a" COM "hover"*/
-.menu ul li a:hover {
-    /*background-color:#D6D6D6;*/
-    color: #6d6666;
-    /*border-bottom:3px solid #a33f3f;*/
+.menu ul li:hover ul{
+    display: block;
 }
 
 .responsive{
     width: 100%;
     max-width: 1920px;
     height: auto;
+}
+.modalidades {
+    display: inline-flex;
+    
+}
+.modalidades a img{
+    border-radius: 100px 150px;
+    height: 250px ;
+    width: 250px;        
+    padding: 1px 1px;
 }
 /*footer*/
 
