@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* CONFIGURAÇÕES DA class "header" */
+/* CONFIGURAÇÕES DO HEADER */
 header {
     /*position: fixed;*/
     left: 0px;
@@ -15,25 +15,25 @@ header {
     text-align: center;
     background: #bea8a8;
 }
-/* CONFIGURAÇÕES DA class "header" NA LISTA NAS TAG "li"*/
+/* CONFIGURAÇÕES DO HEADER NA LISTA NAS TAG "li"*/
 header li{
     display: inline-block;
     margin: 0 10px;
 }
-/* CONFIGURAÇÕES DA class "header" NA LISTA EM CADA TAG "a" */
+/* CONFIGURAÇÕES DO HEADER NA LISTA EM CADA TAG "a" */
 header a {
     text-decoration: none;
     color: rgb(12, 11, 11);
 
 }
-/* CONFIGURAÇÕES DA class "logo" */
+/* CONFIGURAÇÕES DA LOGO */
  .logo {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 2%;        
         
 }
-/* CONFIGURAÇÕES DA class "logo" NA TAG "img"*/
+/* CONFIGURAÇÕES DA LOGO DA TAG "img"*/
 .logo img {
       
         height: 60px ;
@@ -41,72 +41,108 @@ header a {
         float: left;        
         padding: 0px px;
 }
-/* CONFIGURAÇÕES DA class "menu" NA TAG "ul"*/
 .menu ul{
     position: relative;
     background: #bea8a8;
     margin: 0px;
     padding: 0px;
 }
-/* CONFIGURAÇÕES DA class "menu" NA TAG "li" DA TAG "ul"*/
 .menu ul li{
     display: inline-block;
 }
-/* CONFIGURAÇÕES DA class "menu" NA TAG "a" DA TAG "li" DA TAG "ul"*/
 .menu ul li a{
     text-decoration: none;
     color: #050505;
     padding: 15px;
     display: block;
 }
-/* CONFIGURAÇÕES DA class "menu" NA TAG "li" DA TAG "ul" COM "hover"*/
 .menu ul li :hover{
     color: #bb6e6e;
 
 }
-/* CONFIGURAÇÕES DA class "menu" NA TAG "ul" DA TAG "ul"*/
 .menu ul ul{
     position: absolute;
     min-width: 200px;
     display: none;
     
 }
-/* CONFIGURAÇÕES DA class "menu" NA TAG "li" DA TAG "ul" DA TAG "ul"*/
 .menu ul ul li{
     display: block;
     background: #bea8a8;
 }
-/* CONFIGURAÇÕES DA class "menu" NA TAG "li" DA TAG "ul" COM "hover" EM "ul"*/
 .menu ul li:hover ul{
     display: block;
 }
-/* CONFIGURAÇÕES DA class "responsive" */
-.responsive{
-    width: 100%;
-    max-width: 1920px;
-    height: auto;
-}
-/* CONFIGURAÇÕES DA class "modalidades" */
+
 .modalidades {
     display: inline-flex;
     
 }
-/* CONFIGURAÇÕES DA class "modalidades" NA TAG "img" DA TAG "a" */
 .modalidades a img{
     border-radius: 100px 150px;
     height: 250px ;
     width: 250px;        
     padding: 1px 1px;
 }
+
+
+/*INÍCIO CARROSSEL*/
+.container{
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrossel{
+    width: 100%;
+    max-width: 1920px;
+    max-height: 150px;
+    position: relative;
+}
+
+#carrossel img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    transition: opacity 800ms;
+}
+
+#carrossel img.selected{
+    opacity: 1;
+}
+/*FIM DO CARROSSEL*/
+
+/*INÍCIO CONTEÚDOS*/
+.conteudo-1{
+    margin: 800px 0px 0px 200px;
+    float: left;
+}
+
+.conteudo-2{
+    float: right;
+    margin: 800px 200px 0px 0px;
+}
+
+.conteudo-3{
+    float: left;
+    margin: 800px 0px 0px 300px;
+}
+/*FIM CONTEÚDOS*/
+
+
 /*footer*/
 
 footer {
+    margin: 1200px 0px 0px 0px;
     background-color: #bea8a8;
     padding-top: 5em;
     padding-bottom: 40px;
     border-top: 5px solid #bea8a8;
     position: absolute;
 }
+
 footer h2 {
     color: #866565;
 }
@@ -199,3 +235,5 @@ footer li {
     margin-bottom: -50 ;
     margin-left: 50%;
 }
+
+
