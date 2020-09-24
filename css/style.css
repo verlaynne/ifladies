@@ -85,6 +85,7 @@ header a {
     padding: 1px 1px;
 }
 
+
 /*INÍCIO CARROSSEL*/
 .container{
     display: flex;
@@ -113,8 +114,7 @@ header a {
 }
 /*FIM DO CARROSSEL*/
 
-/*INÍCIO CONTEÚDOS ADICIONAIS*/
-
+/*INÍCIO CONTEÚDOS*/
 div.box{    
     position: relative;
     width: 100%;
@@ -123,7 +123,7 @@ div.box{
     margin-top: 40%;
 }
 
-img.conteudo-1.conteudo-2.conteudo-3{
+.img-1.img-2.img-3{
     width: 100%;
     height: auto;
 }
@@ -142,8 +142,7 @@ img.conteudo-1.conteudo-2.conteudo-3{
     float: left;
     padding: 0px 0px 0px 250px;
 }
-
-/*FIM CONTEÚDOS ADICIONAIS*/
+/*FIM CONTEÚDOS*/
 
 
 /*footer*/
